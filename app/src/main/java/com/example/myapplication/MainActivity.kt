@@ -26,17 +26,18 @@ class MainActivity : AppCompatActivity() {
         val frameLayout2 =findViewById<FrameLayout>(R.id.frameLayout2)
         val frameLayout3 =findViewById<FrameLayout>(R.id.frameLayout3)
         val frameLayout4 =findViewById<FrameLayout>(R.id.frameLayout4)
-
-        bn_BMI.setOnClickListener{
-            startActivity(Intent(this,MainActivity3::class.java))
-        }
-
-        bn_pressure.setOnClickListener{
-            startActivity(Intent(this,MainActivity4::class.java))
-        }
         bn_food.setOnClickListener{
             startActivity(Intent(this,MainActivity2::class.java))
         }
+      
+        bn_pressure.setOnClickListener{
+            startActivity(Intent(this,MainActivity4::class.java))
+        }
+       
+        bn_BMI.setOnClickListener{
+            startActivity(Intent(this,MainActivity3::class.java))
+        }
+        
          bn_BMR.setOnClickListener{
             startActivity(Intent(this,MainActivity6::class.java))
         }
