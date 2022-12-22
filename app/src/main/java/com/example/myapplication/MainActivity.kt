@@ -33,6 +33,9 @@ class MainActivity : AppCompatActivity() {
         bn_pressure.setOnClickListener{
             startActivity(Intent(this,MainActivity4::class.java))
         }
+        bn_food.setOnClickListener{
+            startActivity(Intent(this,MainActivity2::class.java))
+        }
     }
 }
 
