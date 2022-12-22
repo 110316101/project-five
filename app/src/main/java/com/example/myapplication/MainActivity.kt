@@ -37,6 +37,9 @@ class MainActivity : AppCompatActivity() {
         bn_food.setOnClickListener{
             startActivity(Intent(this,MainActivity2::class.java))
         }
+         bn_BMR.setOnClickListener{
+            startActivity(Intent(this,MainActivity6::class.java))
+        }
     }
 }
 
