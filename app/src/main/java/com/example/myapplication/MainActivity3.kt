@@ -22,12 +22,11 @@ class MainActivity3 : AppCompatActivity() {
         val height=ed_height.text.toString().toFloat()
         val bmi=weight/(height*height)
         Log.d("BMI",bmi.toString()+weight.toString()+height.toString())
-        Intent(this,MainActivity3_1::class.java).apply {
-            putExtra("BMI_EXTRA",bmi)
-            putExtra("Weight",weight)
-            putExtra("Height",height)
-            startActivity(this)
+        var intent=Intent(this,MainActivity3_1::class.java)
+            intent.putExtra("BMI_EXTRA",bmi.toString())
+            intent.putExtra("Weight",weight.toString())
+            intent.putExtra("Height",height.toString())
+            startActivity(intent)
         }
-    }
 
 }

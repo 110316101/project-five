@@ -88,7 +88,7 @@
             android:contentDescription="@string/todo"
             android:elevation="10dp"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/img" />
+            app:srcCompat="@drawable/img_home" />
 
         <TextView
             android:id="@+id/tv_food2"
@@ -136,7 +136,7 @@
             android:contentDescription="@string/todo"
             android:elevation="10dp"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/img_1"
+            app:srcCompat="@drawable/img_4"
             tools:ignore="ImageContrastCheck" />
 
         <TextView

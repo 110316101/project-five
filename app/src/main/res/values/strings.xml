@@ -85,4 +85,5 @@
     <string name="resultWeight">體重：0</string>
     <string name="BMR">您的基礎代謝率：0</string>
     <string name="formula"><b>計算公式</b>\n基礎代謝率 = (9.99 × 體重) + (6.25 × 身高) -\n(4.92 × 年齡) + (166 × 性別 (男 1、女 0) - 161)</string>
+    <string name="bt_home">TODO</string>
 </resources>

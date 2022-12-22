@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         val bn_food =findViewById<Button>(R.id.bn_food)
         val bn_pressure = findViewById<Button>(R.id.bn_pressure)
         val bn_BMI = findViewById<Button>(R.id.bn_BMI)
+        val bn_BMR= findViewById<Button>(R.id.bn_BMR)
         val frameLayout =findViewById<FrameLayout>(R.id.frameLayout)
         val frameLayout2 =findViewById<FrameLayout>(R.id.frameLayout2)
         val frameLayout3 =findViewById<FrameLayout>(R.id.frameLayout3)
@@ -33,6 +34,13 @@ class MainActivity : AppCompatActivity() {
         bn_pressure.setOnClickListener{
             startActivity(Intent(this,MainActivity4::class.java))
         }
+        bn_food.setOnClickListener {
+            startActivity(Intent(this,MainActivity2::class.java))
+        }
+
+       // bn_BMR.setOnClickListener {
+         //   startActivity(Intent(this,MainActivity3::class.java))
+        //}
     }
 }
 

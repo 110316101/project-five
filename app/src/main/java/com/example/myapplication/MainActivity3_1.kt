@@ -1,10 +1,14 @@
 package com.example.myapplication
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity3_1: AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3_1)
@@ -21,6 +25,11 @@ class MainActivity3_1: AppCompatActivity() {
             suggest.text="體重適中"
         }else if (bmi >= 30){
             suggest.text="體重過重"
+        }
+
+        val btn_home =findViewById<ImageButton>(R.id.ib_home)
+        btn_home.setOnClickListener{
+            startActivity(Intent(this,MainActivity::class.java))
         }
     }
 }
