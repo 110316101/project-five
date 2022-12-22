@@ -21,11 +21,7 @@ class MainActivity : AppCompatActivity() {
         val bn_food =findViewById<Button>(R.id.bn_food)
         val bn_pressure = findViewById<Button>(R.id.bn_pressure)
         val bn_BMI = findViewById<Button>(R.id.bn_BMI)
-<<<<<<< HEAD
         val bn_BMR= findViewById<Button>(R.id.bn_BMR)
-=======
-        val bn_BMR = findViewById<Button>(R.id.bn_BMR)
->>>>>>> df673c4364e65125cc5b53fa656e6222600f30a3
         val frameLayout =findViewById<FrameLayout>(R.id.frameLayout)
         val frameLayout2 =findViewById<FrameLayout>(R.id.frameLayout2)
         val frameLayout3 =findViewById<FrameLayout>(R.id.frameLayout3)
@@ -38,7 +34,6 @@ class MainActivity : AppCompatActivity() {
         bn_pressure.setOnClickListener{
             startActivity(Intent(this,MainActivity4::class.java))
         }
-<<<<<<< HEAD
         bn_food.setOnClickListener {
             startActivity(Intent(this,MainActivity2::class.java))
         }
@@ -46,11 +41,6 @@ class MainActivity : AppCompatActivity() {
        // bn_BMR.setOnClickListener {
          //   startActivity(Intent(this,MainActivity3::class.java))
         //}
-=======
-        bn_food.setOnClickListener{
-            startActivity(Intent(this,MainActivity2::class.java))
-        }
->>>>>>> df673c4364e65125cc5b53fa656e6222600f30a3
     }
 }
 

@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,6 +16,7 @@ class MainActivity3 : AppCompatActivity() {
         val btn_bmi=findViewById<Button>(R.id.button2)
 
     }
+    @SuppressLint("SuspiciousIndentation")
     fun  bmi(view:View){
         val ed_height=findViewById<EditText>(R.id.editTextTextPersonName)
         val ed_weight=findViewById<EditText>(R.id.editTextTextPersonName2)

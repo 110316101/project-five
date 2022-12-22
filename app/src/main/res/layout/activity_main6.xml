@@ -61,23 +61,30 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <RadioButton
-                android:id="@+id/rbtn_male"
-                android:layout_width="wrap_content"
-                android:layout_height="35sp"
-                android:layout_marginStart="120sp"
-                android:layout_marginTop="14sp"
-                android:text="@string/male"
-                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+            <RadioGroup
+                android:layout_width="391dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            <RadioButton
-                android:id="@+id/rbtn_female"
-                android:layout_width="wrap_content"
-                android:layout_height="35sp"
-                android:layout_marginStart="195sp"
-                android:layout_marginTop="14sp"
-                android:text="@string/female"
-                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+                <RadioButton
+                    android:id="@+id/rbtn_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35sp"
+                    android:layout_marginStart="130sp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/male"
+                    tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_female"
+                    android:layout_width="61dp"
+                    android:layout_height="35sp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/female"
+                    tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/tv_age"
@@ -95,13 +102,15 @@
                 android:layout_height="48dp"
                 android:layout_marginStart="105sp"
                 android:layout_marginTop="45sp"
+                android:digits="0123456789"
                 android:ems="10"
+                android:hint="@string/ed_age"
+                android:importantForAutofill="no"
                 android:inputType="number"
-                android:text="@string/ed_age"
                 android:textColor="#757575"
                 android:textSize="14sp"
                 tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
-                android:importantForAutofill="no" />
+                tools:inputType="number" />
 
             <TextView
                 android:id="@+id/tv_height"
@@ -119,10 +128,11 @@
                 android:layout_height="48dp"
                 android:layout_marginStart="105sp"
                 android:layout_marginTop="85sp"
+                android:digits="0123456789"
                 android:ems="10"
+                android:hint="@string/ed_height"
                 android:importantForAutofill="no"
                 android:inputType="number"
-                android:text="@string/ed_height"
                 android:textColor="#757575"
                 android:textSize="14sp"
                 tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
@@ -143,10 +153,11 @@
                 android:layout_height="48dp"
                 android:layout_marginStart="105sp"
                 android:layout_marginTop="125sp"
+                android:digits="0123456789"
                 android:ems="10"
+                android:hint="@string/ed_weight"
                 android:importantForAutofill="no"
                 android:inputType="number"
-                android:text="@string/ed_weight"
                 android:textColor="#757575"
                 android:textSize="14sp"
                 tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
@@ -161,6 +172,16 @@
                 android:backgroundTint="@null"
                 android:text="@string/submit"
                 tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/tv_bmr"
+                android:layout_width="326dp"
+                android:layout_height="82dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="250dp"
+                android:text="您的BMR:"
+                android:textColor="#FF0000"
+                android:textSize="34sp" />
         </FrameLayout>
 
     </LinearLayout>
