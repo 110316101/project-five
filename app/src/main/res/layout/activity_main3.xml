@@ -78,12 +78,13 @@
                     android:layout_marginStart="80dp"
                     android:layout_marginTop="50dp"
                     android:ems="10"
+                    android:hint="請輸入身高（cm）"
+                    android:importantForAutofill="no"
                     android:inputType="textPersonName"
                     android:text="@string/cm"
                     android:textColor="#757575"
                     android:textSize="14sp"
-                    tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
-                    android:importantForAutofill="no" />
+                    tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
                 <EditText
                     android:id="@+id/editTextTextPersonName2"
@@ -92,12 +93,13 @@
                     android:layout_marginStart="80dp"
                     android:layout_marginTop="90dp"
                     android:ems="10"
+                    android:hint="請輸入體重（kg）"
+                    android:importantForAutofill="no"
                     android:inputType="textPersonName"
                     android:text="@string/kg"
                     android:textColor="#757575"
                     android:textSize="14sp"
-                    tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
-                    android:importantForAutofill="no" />
+                    tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
                 <Button
                     android:id="@+id/button2"
